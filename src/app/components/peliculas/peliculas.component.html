@@ -1,0 +1,17 @@
+<h1>Peliculas <small>Appflix</small></h1>
+<hr>
+
+
+<div class="card-columns">
+ 
+  <div *ngFor="let movie of peliculas; let i = index" class="card animated fadeIn fast" >
+    <img class="card-img-top img-fluid" [src]="movie.img" [alt]="movie.nombre">
+    <div class="card-body">
+      <h4 class="card-title">{{ movie.nombre }}</h4>
+      <p class="card-text"> {{ movie.bio }} </p>
+      <p class="card-text"><small class="text-muted">{{ movie.aparicion }}</small></p>  
+    </div>
+  </div>
+  
+
+</div>
